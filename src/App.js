@@ -1,26 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import * as React from "react";
+import Index from './views/Index';
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 
-function App() {
+export default function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Index />,
+    },
+  ]);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hello
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <RouterProvider router={router} />
+  )
 
 }
 
-export default App;
+
