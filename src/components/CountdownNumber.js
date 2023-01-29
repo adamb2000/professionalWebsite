@@ -6,9 +6,15 @@ export default function CountdownNumber({text,number}){
     const [dispNumber,setDispNumber] = useState("Number")
 
     useEffect(() => {
-        console.log(number)
-        setDispText(text)
+        if(number === 1){
+            setDispText(text.slice(0,text.length - 1))
+        }
+        else{
+            setDispText(text)
+        }
+        
         setDispNumber(number)
+        
         
     },[text, number])
     //console.log(dispNumber)

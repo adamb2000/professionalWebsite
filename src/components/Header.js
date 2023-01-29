@@ -1,12 +1,12 @@
 import React, {Fragment} from "react";
-import '../css/topBar.css'
+import '../css/header.css'
 
-export default function TopBar({text,number}){
+export default function Header({text,number}){
     
 
     return(
         <Fragment>
-            <div id="topBar">
+            <div id="header">
                
             </div>
         </Fragment>

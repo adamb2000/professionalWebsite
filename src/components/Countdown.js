@@ -24,7 +24,7 @@ export default function Countdown(){
 
 
     return(
-        <div className="outerContainer">
+        <div id="countdownContainer">
             <CountdownNumber text='Days' number={days}/>
             <CountdownNumber text='Hours' number={hours}/>
             <CountdownNumber text='Minutes' number={minutes}/>
