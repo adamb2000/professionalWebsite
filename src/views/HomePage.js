@@ -7,10 +7,12 @@ import Countdown from '../components/Countdown'
 function HomePage(){
     
     return (
-        <div className="outerContainer">
+        <div id="outerContainer">
             <Header/>
-            <div id="countdownContainer">
-                <Countdown/>
+            <div id="innerContainer">
+                <div id="countdownContainer">
+                    <Countdown/>
+                </div>
             </div>
             <Footer/>
         </div>
