@@ -1,22 +1,21 @@
 import * as React from "react";
 import '../css/homePage.css'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Countdown from '../components/Countdown'
 
-function HomePage(){
+function EnterDetails(){
     
     return (
         <div id="outerContainer">
-            <Header/>
+            <div id="header">
+               <p>Enter Details</p>
+            </div>
             <div id="innerContainer">
-                <div id="countdownContainer">
-                    <Countdown/>
-                </div>
+                <p>Text</p>
             </div>     
             <Footer/>
         </div>
     )
 }
 
-export default HomePage;
+export default EnterDetails;

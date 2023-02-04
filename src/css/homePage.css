@@ -1,11 +1,35 @@
+
+html{
+    min-height: 100%;
+    background-color: yellow;
+}
+
 #outerContainer{
+    display: flex;
+    flex-direction: column;
     background-color: black;
     width: 100%;
-    height: 100%;
-    position: relative;
+    min-height: 100vh;
+    position: absolute;
 }
 
-#outerContainer{
-    padding-bottom: 60px;
+#innerContainer{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 1000px;
+    flex:1
 }
 
+#header{
+    display: flex;
+    background-color: #1b1c1c;
+    width: 100%;
+    height: 100px;  
+    justify-content: center;
+    align-items: center;
+    
+
+}

@@ -1,22 +1,19 @@
 import * as React from "react";
 import '../css/homePage.css'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Countdown from '../components/Countdown'
 
-function HomePage(){
+function ErrorPage(){
     
     return (
         <div id="outerContainer">
-            <Header/>
+            <div id="header">
+               <p>404 PAGE NOT FOUND!</p>
+            </div>
             <div id="innerContainer">
-                <div id="countdownContainer">
-                    <Countdown/>
-                </div>
             </div>     
             <Footer/>
         </div>
     )
 }
 
-export default HomePage;
+export default ErrorPage;
